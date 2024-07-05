@@ -36,3 +36,4 @@ ArgoCD Applications are declarative definitions that describe the desired state 
 - **Source Repository:** Where your Kubernetes manifests are stored.
 - **Path:** The directory within the repository where the manifests are located.
 - **Destination Cluster:** The Kubernetes cluster where the application will be deployed.
+- **Destination Namespace:** The Kubernetes namespace in the cluster where resources will be created.
