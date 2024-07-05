@@ -28,3 +28,7 @@ GitOps is a way to do Kubernetes cluster management and application delivery. It
 - Consistency
 - Traceability
 - Collaboration
+
+### Understanding Applications in ArgoCD
+
+ArgoCD Applications are declarative definitions that describe the desired state of applications in a Git repository, including the source of the application, path to the Kubernetes manifests, destination cluster, and namespace.
