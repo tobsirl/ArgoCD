@@ -55,3 +55,14 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 ```
+
+#### Source
+
+Defines the location and specifics of the manifests, such as a Git repository.
+
+```yaml
+source:
+  repoURL: https://github.com/argoproj/argocd-example-apps.git
+  targetRevision: HEAD
+  path: guestbook
+```
