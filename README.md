@@ -87,3 +87,15 @@ syncPolicy:
     prune: true
     selfHeal: true
 ```
+
+#### Ignore Differences
+
+Lists resource fields that should be ignored during synchronization.
+
+```yaml
+ignoreDifferences:
+  - group: apps
+    kind: Deployment
+    jsonPointers:
+      - /spec/replicas
+```
