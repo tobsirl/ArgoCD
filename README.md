@@ -67,7 +67,7 @@ source:
   path: guestbook
 ```
 
-## Destination
+#### Destination
 
 Specifies where the application should be deployed within the cluster.
 
@@ -75,4 +75,15 @@ Specifies where the application should be deployed within the cluster.
 destination:
   server: https://kubernetes.default.svc
   namespace: guestbook
+```
+
+#### Sync Policy
+
+Configures synchronization behavior, including options for pruning and self-healing.
+
+```yaml
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
 ```
