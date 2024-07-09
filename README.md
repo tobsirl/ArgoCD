@@ -66,3 +66,13 @@ source:
   targetRevision: HEAD
   path: guestbook
 ```
+
+## Destination
+
+Specifies where the application should be deployed within the cluster.
+
+```yaml
+destination:
+  server: https://kubernetes.default.svc
+  namespace: guestbook
+```
