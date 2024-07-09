@@ -99,3 +99,16 @@ ignoreDifferences:
     jsonPointers:
       - /spec/replicas
 ```
+
+#### Tool-specific Configuration
+
+Additional configurations for tools like Helm or Kustomize.
+
+```yaml
+helm:
+  parameters:
+    - name: image.tag
+      value: v1.0.1
+kustomize:
+  namePrefix: prod-
+```
