@@ -112,3 +112,9 @@ helm:
 kustomize:
   namePrefix: prod-
 ```
+
+#### Health Checks
+
+Defines custom health checks for resources to monitor the application's state.
+
+Each section can be expanded with details specific to your deployment and applied to ArgoCD with `kubectl apply -f application.yaml`. Monitoring can be done via ArgoCD CLI or UI.
