@@ -37,3 +37,21 @@ ArgoCD Applications are declarative definitions that describe the desired state 
 - **Path:** The directory within the repository where the manifests are located.
 - **Destination Cluster:** The Kubernetes cluster where the application will be deployed.
 - **Destination Namespace:** The Kubernetes namespace in the cluster where resources will be created.
+
+### ArgoCD Application Specification
+
+An ArgoCD Application Specification defines the deployment and management parameters for an application in a Kubernetes cluster. The specification includes several key elements:
+
+#### Metadata
+
+Includes the application's name, namespace, and labels, along with finalizers to control deletion behavior.
+
+```yaml
+metadata:
+  name: guestbook
+  namespace: argocd
+  labels:
+    app.kubernetes.io/name: guestbook
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+```
