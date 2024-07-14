@@ -24,7 +24,8 @@ GitOps is a way to do Kubernetes cluster management and application delivery. It
 - The push-based approach simplifies automation and ensures a consistent state across environments.
 
 - **Pull and Reconciliation**
-- Automation tools
+- Automation tools continuously pull from the Git repository and reconcile the system to match the declared state.
+- Automatic synchromization reduces manual interventions and minimizes configuration drift.
 
 ### Core Principles
 
